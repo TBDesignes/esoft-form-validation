@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width height=device-height">
+    <title>QuickChat - Register</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="module" src="register.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="title">
+                QuickChat
+            </div>
+        </div>
+        <div class="content-panel">
+            <form method="POST">
+                <div class="userdata-panel">
+                    <div class="userdata-title">Создать новый аккаунт</div>
+                    <div class="userdata-fields">
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="user">Имя пользователя</label>
+                            <input class="userdata-field-input" id="user" name="user" type="text" size="20" required>
+                        </div>
+                        <label class="userdata-hint" id="user-hint" hidden>Имя может содержать только буквы</label>
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="username">E-mail</label>
+                            <input class="userdata-field-input" id="username" name="username" type="email" size="20" required>
+                        </div>
+                        <label class="userdata-hint" id="username-hint" hidden>Неправильный email</label>
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="password">Пароль</label>
+                            <input class="userdata-field-input" id="password" name="password" type="password" size="20" required>
+                        </div>
+                        <label class="userdata-hint" id="password-hint" hidden>Не меньше 8 символов</label>
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="password-repeat">Повторите пароль</label>
+                            <input class="userdata-field-input" id="password-repeat" type="password" size="20" required>
+                        </div>
+                        <label class="userdata-hint" id="password-repeat-hint" hidden>Пароли не совпадают</label>
+                        <div class="userdata-field">
+                            <label class="userdata-checkbox-label" for="agreement">Я согласен с условиями пользования</label>
+                            <input class="userdata-checkbox-input" id="agreement" name="agreement" type="checkbox" required>
+                        </div>
+                        <label class="userdata-hint" id="agreement-hint" hidden>Вы должны согласиться</label>
+                    </div>
+                    <button class="button-submit" id="btn-submit" type="button">Регистрация</button>
+                    <div class="helpful-links">
+                        <a href="login.html">Войти</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-bar">
+            <div class="footer">
+                Made by Shkamlotov Nikita aka TBDesignes#8462
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

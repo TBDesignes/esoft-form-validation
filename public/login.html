@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width height=device-height">
+    <title>QuickChat - Log in</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script type="module" src="./login.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="title">
+                QuickChat
+            </div>
+        </div>
+        <div class="content-panel">
+            <form method="POST">
+                <div class="userdata-panel">
+                    <div class="userdata-title">Войти</div>
+                    <div class="userdata-fields">
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="username">E-mail</label>
+                            <input class="userdata-field-input" id="username" name="username" type="text" size="20">
+                        </div>
+                        <label class="userdata-hint" id="username-hint" hidden>Неправильный email</label>
+                        <div class="userdata-field">
+                            <label class="userdata-field-label" for="password">Пароль</label>
+                            <input class="userdata-field-input" id="password" name="password" type="password" size="20">
+                        </div>
+                        <label class="userdata-hint" id="password-hint" hidden>Не должен быть короче 8 символов</label>
+                    </div>
+                    <div class="helpful-links">
+                        <a href="empty">Забыли пароль?</a>
+                        <a href="register.html">Создать аккаунт</a>
+                    </div>
+                    <button id="btn-submit" class="button-submit" type="button">Войти</button>
+                </div>
+            </form>
+        </div>
+        <div class="bottom-bar">
+            <div class="footer">
+                Made by Shkamlotov Nikita aka TBDesignes#8462
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
